@@ -1,6 +1,6 @@
 ---
 name: agenda-da-semana
-description: Lista todas as reuniões com clientes programadas para a semana atual cujo título contenha "IA par compras" ou "plano de ROI", mostrando empresa, contato, telefone, data e horário. TRIGGER quando usuário pedir "agenda da semana", "reuniões da semana", "minha agenda", "que reuniões tenho essa semana", "compromissos da semana", "lista de reuniões", "reuniões programadas" ou qualquer variação de consulta de agenda semanal com clientes.
+description: Lista todas as reuniões com clientes programadas para a semana atual cujo título contenha "IA para compras" ou "plano de ROI", mostrando empresa, contato, telefone, data e horário. TRIGGER quando usuário pedir "agenda da semana", "reuniões da semana", "minha agenda", "que reuniões tenho essa semana", "compromissos da semana", "lista de reuniões", "reuniões programadas" ou qualquer variação de consulta de agenda semanal com clientes.
 ---
 
 # Skill: Agenda da Semana dgenny®
@@ -9,7 +9,7 @@ description: Lista todas as reuniões com clientes programadas para a semana atu
 
 Consulta o Google Calendar via Composio e retorna todas as reuniões da **semana atual** (segunda a domingo) cujo título contenha:
 
-- `IA par compras` (com qualquer capitalização)
+- `IA para compras` (com qualquer capitalização)
 - `plano de ROI` (com qualquer capitalização)
 
 Para cada reunião, extrai e exibe:
@@ -72,7 +72,7 @@ Usar `mcp__composio__COMPOSIO_MULTI_EXECUTE_TOOL` com a ferramenta identificada 
 ### Passo 4 — Filtrar os eventos relevantes
 
 Da lista retornada, manter **apenas** os eventos cujo título (`summary`) contenha (case-insensitive):
-- `IA par compras`
+- `IA para compras`
 - `plano de ROI`
 
 Se nenhum evento for encontrado com esses critérios, informar:
